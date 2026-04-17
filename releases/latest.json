@@ -1,0 +1,11 @@
+{
+  "version": "0.1.0",
+  "notes": "Initial release of Lurk! Notes, tasks, session tracking, and a game overlay with global hotkey.",
+  "pub_date": "2026-04-17T00:00:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUK05LY3MzWUhoWlE5WTF2NU9FZW1nanlCMjIrU2R1TEs0V0JwQWpCdnhDOTIwT3VsRVA3VkJnMTlKWGFPTlp3Zjdoa01QQUhxVDhtd09rRkh0MkRhZ0RKTWFhaVlYOEFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2NDYyNjMyCWZpbGU6bHVya18wLjEuMF94NjQtc2V0dXAuZXhlClFUNHE4akN3WUVOUW9MQm15MnNaK3FUN0J5MlpWaXhpd0lwcjRQT3FTVUNPem1sdi9OcDhrV1ZtQStBNUVFTzA0VlE5dHJlaUhoQS9nOVplQTc5Y0JnPT0K",
+      "url": "https://github.com/NoVaaDev147/lurk/releases/download/v0.1.0/lurk_0.1.0_x64-setup.exe"
+    }
+  }
+}
