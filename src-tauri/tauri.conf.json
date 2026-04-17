@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "lurk",
+  "version": "0.1.0",
+  "identifier": "com.lurk.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Lurk",
+        "width": 900,
+        "height": 600,
+        "minWidth": 700,
+        "minHeight": 500,
+        "resizable": true,
+        "center": true
+      },
+      {
+        "label": "overlay",
+        "title": "Lurk Overlay",
+        "width": 320,
+        "height": 500,
+        "x": 20,
+        "y": 20,
+        "decorations": false,
+        "alwaysOnTop": true,
+        "resizable": true,
+        "visible": false,
+        "transparent": false,
+        "skipTaskbar": true,
+        "dragDropEnabled": true,
+        "url": "http://localhost:1420/overlay.html"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDUzQTRDOEFFNUZFNENCNDUKUldSRnkrUmZyc2lrVXdPSU5mdjFjZjBWekdYS1A3RmtWbDBmTmtRMzBUVjJrL3RpNVpPWlN4aGQK",
+      "endpoints": [
+        "https://raw.githubusercontent.com/NoVaaDev/lurk/main/releases/latest.json"
+      ]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
