@@ -44,11 +44,11 @@
   },
   "plugins": {
     "updater": {
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDUzQTRDOEFFNUZFNENCNDUKUldSRnkrUmZyc2lrVXdPSU5mdjFjZjBWekdYS1A3RmtWbDBmTmtRMzBUVjJrL3RpNVpPWlN4aGQK",
-      "endpoints": [
-        "https://raw.githubusercontent.com/NoVaaDev/lurk/main/releases/latest.json"
-      ]
-    }
+     "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDY1RTE4MUREMkNBNzM0RkUKUldUK05LY3MzWUhoWlRVOHJCTlR2NGZyMGVxU2pSUk11L3l3VS8xSVdJQ0RYOUhNR1Z4SlVCYUMK",
+     "endpoints": [
+       "https://raw.githubusercontent.com/NoVaaDev147/lurk/main/releases/latest.json"
+     ]
+   }
   },
   "bundle": {
     "active": true,
