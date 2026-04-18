@@ -39,20 +39,22 @@ export default function Settings() {
   try {
     const { check } = await import("@tauri-apps/plugin-updater");
     const update = await check();
+    console.log("update check result:", update);
     if (update?.available) {
       setUpdateStatus("idle");
-      const confirm = window.confirm(`Update ${update.version} is available! Install now?`);
+      const confirm = window.confirm(`Update ${update.version} available!\n\n${update.body}\n\nInstall now?`);
       if (confirm) {
         await update.downloadAndInstall();
       }
     } else {
+      console.log("no update available, current version is latest");
       setUpdateStatus("up-to-date");
       setTimeout(() => setUpdateStatus("idle"), 3000);
     }
   } catch (e) {
-    console.error("update check failed:", e);
-    setUpdateStatus("up-to-date");
-    setTimeout(() => setUpdateStatus("idle"), 3000);
+    console.error("update check error:", e);
+    alert("Update check failed: " + JSON.stringify(e));
+    setUpdateStatus("idle");
   }
 }
 
