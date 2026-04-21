@@ -1,11 +1,11 @@
 {
-  "version": "0.1.2",
-  "notes": "Update v0.1.2 - Fixed overlay issues!",
+  "version": "0.1.3",
+  "notes": "Update v0.1.3 - Bug fixes!",
   "pub_date": "2026-04-17T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUK05LY3MzWUhoWlNZZTNCVWhnN3BZTUxhMkVLN01uTjVOUFZHcHZNQ3k1am1FNmFhT1hvejExanVTcEQ0Zm5wREpjZDErN2ViTmd0YlJVbVFMUkoxRTA1cDRuUjc2dkEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2ODEwODY2CWZpbGU6bHVya18wLjEuMl94NjQtc2V0dXAuZXhlCkRkRkRPRlhVZWpaZXFmbEZMVTZzdmlzVUFTQnNiUzBnem1ReG1xZVAvT0tEK0hQNDhsQ3krVmh5eFUyRWdRTk9USFR1ZVhBdmIzeDZ5L0ZSVnErR0JRPT0K",
-      "url": "https://github.com/NoVaaDev147/lurk/releases/download/v0.1.2/lurk_0.1.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUK05LY3MzWUhoWlI3OHpycTlWNDZUVzZRdFZaY0d4Y2ZUTTB0TjRuNGpQcklRREE3ZFFWMjN6aGg0eEh5cEkxMUFhS21DYnpteERZOXpGallOQ1BoK3ZQTDduL2Erd1FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2ODE1NTg2CWZpbGU6bHVya18wLjEuM194NjQtc2V0dXAuZXhlCjhrR3Q2RGhraGgwcWRRN0JaOEhqblNoaVE2bWpQWTVUMURvK1JTZ3V4Z1NrcGVZc3loUVNPcnN0cFNxMnVyNWJLVVNmekVxanZUcnpSR0h2d2VTSkRBPT0K",
+      "url": "https://github.com/NoVaaDev147/lurk/releases/download/v0.1.3/lurk_0.1.3_x64-setup.exe"
     }
   }
 }
