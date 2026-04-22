@@ -1,11 +1,11 @@
 {
-  "version": "0.1.3",
-  "notes": "Update v0.1.3 - Bug fixes!",
+  "version": "0.1.4",
+  "notes": "Update v0.1.4 - Security fixes.",
   "pub_date": "2026-04-17T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUK05LY3MzWUhoWlI3OHpycTlWNDZUVzZRdFZaY0d4Y2ZUTTB0TjRuNGpQcklRREE3ZFFWMjN6aGg0eEh5cEkxMUFhS21DYnpteERZOXpGallOQ1BoK3ZQTDduL2Erd1FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2ODE1NTg2CWZpbGU6bHVya18wLjEuM194NjQtc2V0dXAuZXhlCjhrR3Q2RGhraGgwcWRRN0JaOEhqblNoaVE2bWpQWTVUMURvK1JTZ3V4Z1NrcGVZc3loUVNPcnN0cFNxMnVyNWJLVVNmekVxanZUcnpSR0h2d2VTSkRBPT0K",
-      "url": "https://github.com/NoVaaDev147/lurk/releases/download/v0.1.3/lurk_0.1.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUTZjaVBoUENWUHFuUlFqYnJzWDE4TE5JNEY4WU95UGhzQzJwaVl5M0FUdlhNL05KbldMUDZRLzlaclFBZ2s3VlNHM2Q3cUtySUdWeW5XeDFFTUJld0V3TXFVdTlQRkFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2ODg2NDE3CWZpbGU6bHVya18wLjEuNF94NjQtc2V0dXAuZXhlCmk5QXI0Q1RCckhzTnFyWE9IR05ncy9Sa0x2dTV5ZFNyNmMraFM4VFp2ZjdXcmpaYkNJalB2QTV4MDV5eTBzUHZMSHpYZVpxOTBrU1ozZ0ZoTXNPTkN3PT0K",
+      "url": "https://github.com/NoVaaDev147/lurk/releases/download/v0.1.4/lurk_0.1.4_x64-setup.exe"
     }
   }
 }
