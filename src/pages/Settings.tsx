@@ -3,7 +3,7 @@ import { getDb } from "../store/db";
 import { Settings as SettingsType } from "../types";
 import { invoke } from "@tauri-apps/api/core";
 
-const VERSION = "0.1.5";
+const VERSION = "0.1.6";
 
 export default function Settings() {
   const [settings, setSettings] = useState<SettingsType>({
