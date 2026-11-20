@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "games": [
+    {"name": "Roblox", "exes": ["RobloxPlayerBeta.exe"]},
+    {"name": "Counter-Strike 2", "exes": ["cs2.exe"]},
+    {"name": "VALORANT", "exes": ["VALORANT-Win64-Shipping.exe"]}
+  ]
+}
