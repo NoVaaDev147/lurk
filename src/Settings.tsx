@@ -3,6 +3,7 @@ import { Moon, Sun, Check } from "lucide-react";
 import { PALETTES, useTheme } from "./theme";
 import { getAutostart, setAutostart, getSetting, setSetting } from "./api";
 import HotkeyRow from "./HotkeyRow";
+import UpdatesSection from "./UpdatesSection";
 
 function Switch({on, onChange}: {on: boolean; onChange: (v: boolean) => void}) {
   return (
@@ -81,6 +82,8 @@ export default function Settings() {
 
             {error && <div className="setting-desc" style={{color: "var(--danger)"}}>{error}</div>}
           </section>
+
+          <UpdatesSection />
 
           <section className="settings-section">
             <h3 className="section-title">Appearance</h3>

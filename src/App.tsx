@@ -6,6 +6,8 @@ import Notes from "./Notes"
 import Sessions from "./Sessions";
 import Settings from "./Settings";
 import TitleBar from "./TitleBar";
+import UpdateScreen from "./UpdateScreen";
+import { UpdatesProvider } from "./updates";
 import { Toaster } from "./toast";
 import { useTheme } from "./theme";
 
@@ -32,32 +34,35 @@ export default function App() {
   );
 
   return (
-    <div className="shell">
-      <TitleBar />
-      <div className="app">
-        <aside className="sidebar">
-          <div className="brand">Lurk</div>
+    <UpdatesProvider>
+      <div className="shell">
+        <TitleBar />
+        <div className="app">
+          <aside className="sidebar">
+            <div className="brand">Lurk</div>
 
-          {nav("tasks", <ListChecks size={18} />, "Tasks")}
-          {nav("notes", <NotebookPen size={18} />, "Notes")}
-          {nav("sessions", <Timer size={18} />, "Sessions")}
+            {nav("tasks", <ListChecks size={18} />, "Tasks")}
+            {nav("notes", <NotebookPen size={18} />, "Notes")}
+            {nav("sessions", <Timer size={18} />, "Sessions")}
 
-          <div className="spacer" />
+            <div className="spacer" />
 
-          {nav("settings", <SettingsIcon size={18} />, "Settings")}
-        </aside>
+            {nav("settings", <SettingsIcon size={18} />, "Settings")}
+          </aside>
 
-        <main className="content">
-          <div className="page" key={page}>
-            {page === "tasks" && <Tasks />}
-            {page === "notes" && <Notes />}
-            {page === "sessions" && <Sessions />}
-            {page === "settings" && <Settings />}
-          </div>
-        </main>
-        
-        <Toaster />
+          <main className="content">
+            <div className="page" key={page}>
+              {page === "tasks" && <Tasks />}
+              {page === "notes" && <Notes />}
+              {page === "sessions" && <Sessions />}
+              {page === "settings" && <Settings />}
+            </div>
+          </main>
+          
+          <Toaster />
+        </div>
+        <UpdateScreen />
       </div>
-    </div>
+    </UpdatesProvider>
   );
 }

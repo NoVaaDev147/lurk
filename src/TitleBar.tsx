@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { getCurrentWindow } from "@tauri-apps/api/window";
-import { Minus, Square, Copy, X } from "lucide-react";
+import { Minus, Square, Copy, X, Download } from "lucide-react";
+import { useUpdates } from "./updates";
 
 export default function TitleBar() {
     const win = getCurrentWindow();
     const [maximized, setMaximized] = useState(false);
+    const {available, startUpdate} = useUpdates();
 
     useEffect(() => {
         const sync = () =>
@@ -24,6 +26,16 @@ export default function TitleBar() {
           <span className="titlebar-title" data-tauri-drag-region>
             Lurk
           </span>
+
+          {available && (
+            <button
+              className="update-pill"
+              onClick={startUpdate}
+              title={`Version ${available.version} is available`}
+            >
+              <Download size={12} /> Update client
+            </button>
+          )}
 
           <div className="window-controls">
             <button onClick={() => win.minimize()} title="Minimize">

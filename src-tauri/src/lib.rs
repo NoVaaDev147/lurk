@@ -7,6 +7,7 @@ mod settings;
 mod system;
 mod tasks;
 mod widget;
+mod updater;
 mod startup;
 
 use rusqlite::Connection;
@@ -83,6 +84,7 @@ pub fn run() {
             MacosLauncher::LaunchAgent,
             Some(vec![]),
         ))
+        .plugin(tauri_plugin_updater::Builder::new().build())
         .setup(|app| {
             let dir = app.path().app_data_dir()?;
             let conn = db::open(dir.join("lurk.db"))?;
@@ -102,6 +104,7 @@ pub fn run() {
             }
 
             detect::start(app.handle().clone());
+            updater::start_background_check(app.handle().clone());
             startup::start_watchdog(app.handle().clone());
             setup_tray(app)?;
             Ok(())
@@ -163,6 +166,9 @@ pub fn run() {
             widget::toggle_widget,
             widget::hide_widget,
             widget::set_hotkey,
+            updater::check_for_update,
+            updater::get_pending_update,
+            updater::install_update,
             startup::app_ready,
         ])
         .run(tauri::generate_context!())

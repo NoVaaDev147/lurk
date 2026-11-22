@@ -59,4 +59,15 @@ export const deleteSession = (id: number) => invoke<void>("delete_session", {id}
 
 export const getAutostart = () => invoke<boolean>("get_autostart");
 export const setAutostart = (enabled: boolean) => invoke<void>("set_autostart", {enabled});
-export const setHotkey = (accelerator: string) => invoke<void>("set_hotkey", {accelerator}) 
+export const setHotkey = (accelerator: string) => invoke<void>("set_hotkey", {accelerator});
+
+export interface UpdateInfo {
+    version: string;
+    currentVersion: string;
+    notes: string | null;
+    date: string | null;
+}
+
+export const checkForUpdate = () => invoke<UpdateInfo | null>("check_for_update");
+export const getPendingUpdate = () => invoke<UpdateInfo | null>("get_pending_update");
+export const installUpdate = () => invoke<void>("install_update");

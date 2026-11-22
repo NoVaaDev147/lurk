@@ -3,6 +3,15 @@
   "productName": "Lurk",
   "version": "0.1.0",
   "identifier": "com.novaadev.lurk",
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEEyQjE1OTA0REUwM0FCODMKUldTRHF3UGVCRm14b2oxSjRTa25tT2ZLMWtnZGYwczhtVmx1RUVWcUIzL1hXQmg2aVBJUjY1ME4K",
+      "endpoints": [
+        "https://github.com/NoVaaDev147/lurk/releases/latest/download/latest.json"
+      ],
+      "windows": {"installMode": "quiet"}
+    }
+  },
   "build": {
     "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:1420",
@@ -56,6 +65,7 @@
   "bundle": {
     "active": true,
     "targets": ["nsis"],
+    "createUpdaterArtifacts": true,
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
