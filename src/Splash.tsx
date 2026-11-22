@@ -14,7 +14,7 @@ export default function Splash() {
         <div className="splash">
           <div className="splash-card">
             <div className="splash-logo">Lurk</div>
-            <div className="splash-sub">Tasks. Notes. Sessions.</div>
+            <div className="splash-sub">Tasks. Notes. Sessions. All in one.</div>
             <div className="splash-bar">
               <span />
             </div>
