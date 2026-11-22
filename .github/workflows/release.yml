@@ -32,9 +32,10 @@ jobs:
         shell: bash
         run: |
           {
-            echo 'body<<NOTES_E0F'
+            echo 'body<<NOTES_EOF'
             cat RELEASE_NOTES.md
-            echo 'NOTES_E0F'
+            echo
+            echo 'NOTES_EOF'
           } >> "$GITHUB_OUTPUT"
 
       - uses: tauri-apps/tauri-action@v0
