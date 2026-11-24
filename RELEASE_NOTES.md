@@ -1,3 +1,4 @@
-Small update to test the updater.
+Widget update
 
-- Updated splash text.
+- Fixed widget border glow looking weird around edges
+- Remade the notes page on the widget to look cleaner
